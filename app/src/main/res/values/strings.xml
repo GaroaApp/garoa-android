@@ -5,4 +5,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="accessToken">pk.eyJ1IjoiYWd0bHVjYXMiLCJhIjoiY2llb2ZkMzA1MGhzenMza200MjVvMGg0aSJ9.ykJS24d3egzMnBvsCIc1Lw</string>
 </resources>
