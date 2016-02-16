@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.camera.CameraPosition;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.constants.Style;
@@ -43,6 +44,12 @@ public class MainActivity extends AppCompatActivity
         mapView.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
         mapView.onCreate(savedInstanceState);
+
+        mapView.addMarker(new MarkerOptions()
+                .position(new LatLng(41.885, -87.679))
+                .title("Hello, Mapbox!")
+                .snippet("Welcome to Mapbox!"));
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
